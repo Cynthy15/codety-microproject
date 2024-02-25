@@ -1,0 +1,69 @@
+<!DOCTYPE >
+<html>
+
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/register style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <titlle> </titlle>
+
+    </head>
+
+    <body>
+    
+        <nav class="heading">
+
+            <span class="image">
+                <img src="/images/lloyds-lr-logo.png" alt="logo">
+            </span>
+    
+            <span class="name"><a href="app.html">Lap<span class="reg">Register.</span></a></span>
+    
+            <ul>
+                <li><a href="applogin.html">Lognin</a></li>
+            </ul>
+    
+         </nav>
+    
+    
+    
+        
+         
+        <div class="highlight">
+          
+            <div class="container">
+               
+                <form onsubmit="event.preventDefault()">
+                    <div class="text">
+                        CREATE ACCOUNT
+                     </div>
+
+                    <label for="firstName">First Name</label>
+                    <input type="text" placeholder="First name" id="firstName">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" placeholder="Last name" id="lastName">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email address" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    
+                    <button type="button" onclick="onSignup()"> Submit </button>
+
+                    <div class="word">
+                         Already have account? <span><a href="applogin.html">Login here</a></span>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+        <script src="./jscrips/firebase.js"></script>
+        <script src="./jscrips/auth.js"></script>
+
+    </body>
+</html>

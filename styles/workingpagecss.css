@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap');
+
+
+
+.heading{
+  margin: 0px -7px 10px -7px;
+  display: flex;
+  justify-content: space-between;
+  background-color:#83abf5f9;
+}
+
+.heading .name{
+color: white;
+margin-left:-670px;
+margin-top: 25px;
+font-size: 24px;
+font-family: 'Inknut Antiqua', serif;
+}
+.heading .name span{
+font-weight: bold;
+color:black ;
+}
+
+.heading ul{
+  margin-right: 100px;
+  display: flex;
+}
+
+.heading li{
+ list-style: none;   
+ padding: 20px;
+ 
+}
+.heading .image{
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+
+}
+.heading  img{
+  margin-left: 20px;
+  width: 40px;
+  border-radius: 6px;
+}
+
+.heading li a {
+  text-decoration: none;
+  background-color: darkblue;
+  padding: 10 30px;
+  border-radius: 30px;
+  color: red;
+
+}
+.heading .name a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+body{
+  height: 100vh;
+}
+
+table{
+  margin-left: 3px;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  margin-right: -7px;
+  position: relative;
+  width: 50px;
+}
+
+

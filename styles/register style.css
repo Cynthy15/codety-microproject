@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+.heading{
+  margin: -10px -7px 0px -7px;
+  display: flex;
+  justify-content: space-between;
+  background-color:#83abf5f9;
+  padding-bottom: 20px;
+}
+
+.heading .name{
+color: white;
+margin-left:-730px;
+margin-top: 20px;
+font-size: 24px;
+font-family: 'Inknut Antiqua', serif;
+}
+.heading .name span{
+font-weight: bold;
+color:black ;
+}
+
+.heading ul{
+  margin-right: 100px;
+  display: flex;
+}
+
+.heading li{
+ list-style: none;   
+ padding: 15px;
+ margin-top: 30px;
+}
+.heading .image{
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+
+}
+.heading  img{
+  margin-left: 30px;
+  width: 40px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+
+
+.highlight{
+    background:white;
+    padding: 20px 0px 0px 400px;
+    display: flex;
+  }
+  .highlight .text{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: #75a3f4f9;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
+  form{
+    display: grid;
+    margin: 0 0 ;
+    padding: 10px 60px 30px 60px;
+    background-color: rgb(239, 233, 233);
+  }
+  button{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    background: #75a3f4f9;
+    block-size: 45px; 
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  input{
+    padding: 12px;
+    margin: 10px 0 10px 0;
+  }
+
+  .word a{
+    text-decoration: none;
+    color: darkcyan;
+  }
+
+  .heading li a {
+    text-decoration: none;
+    background-color: white;
+    padding: 10 30px;
+    border-radius: 30px;
+
+  }
+  .heading .name a {
+    text-decoration: none;
+    color: white;
+  }
