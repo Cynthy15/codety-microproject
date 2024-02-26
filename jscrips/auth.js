@@ -15,7 +15,7 @@ const onSignup = () =>{
         .then((userProfile) => {
             console.log(userProfile);
             alert("User registered successfully")
-            window.location.href="./working page.html";
+            window.location.href="./lapregister.html";
         })
         .catch((error) => {
             alert(" user profile not registered")
