@@ -56,7 +56,7 @@
         <label for="serialNumber">Serial Number:</label>
         <input type="number" placeholder="Serial Number" id="serialNumber">
 
-        <button type="button" id="insert" onclick="AddData()">Register  </button>
+        <button type="button" id="insert" onclick="AddData()" onclick="addData()">Register  </button>
        
 
     </form>
@@ -77,9 +77,16 @@
     </table>
  </div> 
 
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+ <script src="./jscrips/firebase.js"></script>
+ <script src="./jscrips/auth.js"></script>
+ <script src="./jscrips/database.js"></script>
+
      <script >
 
-function AddData() { 
+function addData() { 
     // Get input values 
     let name = 
         document.getElementById("Name").value; 
