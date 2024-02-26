@@ -34,7 +34,7 @@ const onLogin=() => {
     auth.signInWithEmailAndPassword(email,password)
     .then((userSession) => {
         alert("user logged in successfully")
-        window.location.href="./working page.html";
+        window.location.href="./lapregister.html";
         console.log(userSession);
     })
     .catch((error) => {
