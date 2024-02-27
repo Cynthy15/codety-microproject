@@ -24,7 +24,7 @@
     })
       .then(()=>{
           alert("data inserted successfully"); 
-    
+          window.location.href="working page.html"
       })
       .catch((error)=>{
           alert("data not inserted successfully");

@@ -30,7 +30,7 @@
 
     <div class="highlight"> 
         <div class="text">
-            REGISTER HERE
+            REGISTER YOUR LAPTOP HERE
          </div>
   
 </div>
@@ -56,26 +56,10 @@
         <label for="serialNumber">Serial Number:</label>
         <input type="number" placeholder="Serial Number" id="serialNumber">
 
-        <button type="button" id="insert" onclick="AddData()" onclick="addData()">Register  </button>
+        <button type="button" id="insert"  onclick="AddData()">Register  </button>
        
-
     </form>
 </div>
-<div class="container mt-3">
-    <table id="outputTable" class="table table-Dark">
-        <thead>
-            <th> Name</th>
-            <th> Email</th>
-            <th> RegNo</th>
-            <th> Department</th>
-            <th> LaptopName</th>
-            <th> serialNumber</th>
-            
-            <th> control center</th>
-        </thead>
-        <tbody id="tbody1"></tbody>
-    </table>
- </div> 
 
  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
@@ -84,109 +68,5 @@
  <script src="./jscrips/auth.js"></script>
  <script src="./jscrips/database.js"></script>
 
-     <script >
-
-function addData() { 
-    // Get input values 
-    let name = 
-        document.getElementById("Name").value; 
-    let email = 
-        document.getElementById("email").value; 
-    let RegNo= 
-        document.getElementById("regNo").value; 
-    let Department = 
-        document.getElementById("department").value; 
-    let LaptopName= 
-        document.getElementById("lapName").value; 
-    let serialnumber=
-        document.getElementById("serialNumber").value;    
-    
-    // Get the table and insert a new row at the end 
-    let table = document.getElementById("outputTable"); 
-    let newRow = table.insertRow(table.rows.length); 
-    
-    // Insert data into cells of the new row 
-    newRow.insertCell(0).innerHTML = name; 
-    newRow.insertCell(1).innerHTML = email; 
-    newRow.insertCell(2).innerHTML = RegNo; 
-    newRow.insertCell(3).innerHTML = Department; 
-    newRow.insertCell(4).innerHTML = LaptopName;
-    newRow.insertCell(5).innerHTML = serialnumber;
-    newRow.insertCell(6).innerHTML = 
-        '<button onclick="editData(this)">Edit</button>'+ 
-        '<button onclick="deleteData(this)">Delete</button>'; 
-    
-    // Clear input fields 
-    clearInputs(); 
-    window.location.href="working page.html"
-} 
-
-function editData(button) { 
-    
-    // Get the parent row of the clicked button 
-    let row = button.parentNode.parentNode; 
-    
-    // Get the cells within the row 
-    let nameCell = row.cells[0]; 
-    let emailCell = row.cells[1]; 
-    let RegNoCell = row.cells[2]; 
-    let DepartmentCell = row.cells[3]; 
-    let LaptopNamecell = row.cells[4];
-    let serialnumbercell = row.cells[5];
-    
-    // Prompt the user to enter updated values 
-    let Name = 
-        prompt("Enter the updated name:", 
-            nameCell.innerHTML); 
-    let email = 
-        prompt("Enter the updated email:", 
-            emailCell.innerHTML); 
-    let regNo = 
-        prompt("Enter the updated Registration number:", 
-            RegNoCell.innerHTML 
-        ); 
-    let department = 
-        prompt("Enter the updated department:", 
-            DepartmentCell.innerHTML 
-        ); 
-    let lapName = 
-        prompt("Enter the updated laptop name:", 
-            LaptopNamecell.innerHTML 
-        ); 
-    let serialNumber = 
-        prompt("Enter the updated serial number:", 
-            serialnumbercell.innerHTML 
-        ); 
-    
-    // Update the cell contents with the new values 
-    nameCell.innerHTML = Name; 
-    emailCell.innerHTML = email; 
-    RegNoCell.innerHTML = regNo; 
-    DepartmentCell.innerHTML = department; 
-    LaptopNamecell.innerHTML = lapName; 
-    serialnumbercell.innerHTML = serialNumber; 
-} 
-function deleteData(button) { 
-    
-    // Get the parent row of the clicked button 
-    let row = button.parentNode.parentNode; 
-
-    // Remove the row from the table 
-    row.parentNode.removeChild(row); 
-} 
-function clearInputs() { 
-    
-    // Clear input fields 
-    document.getElementById("name").value = ""; 
-    document.getElementById("Email").value = ""; 
-    document.getElementById("regNo").value = ""; 
-    document.getElementById("department").value = ""; 
-    document.getElementById("lapName").value = ""; 
-    document.getElementById("serialNumber").value = ""; 
-} 
-
-</script>
-
-        </body>
-
+</body>
 </html>

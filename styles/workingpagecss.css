@@ -4,7 +4,7 @@
 
 
 .heading{
-  margin: 0px -7px 10px -7px;
+  margin: -10px -7px 10px -7px;
   display: flex;
   justify-content: space-between;
   background-color:#83abf5f9;
@@ -13,7 +13,7 @@
 .heading .name{
 color: white;
 margin-left:-670px;
-margin-top: 25px;
+margin-top: 20px;
 font-size: 24px;
 font-family: 'Inknut Antiqua', serif;
 }
@@ -63,14 +63,30 @@ body{
   height: 100vh;
 }
 
-table{
-  margin-left: 3px;
-  display: flex;
-  position: absolute;
-  margin-top: 50px;
-  margin-right: -7px;
-  position: relative;
-  width: 50px;
+table { 
+  border-collapse: collapse; 
+  margin-bottom: 20px; 
+  width: 100%; 
+} 
+
+th, 
+td { 
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  text-align: left; 
+} 
+
+th { 
+  background-color:#83abf5f9; 
+  color: #fff; 
+} 
+button{
+  background: #75a3f4f9;
+  block-size: 45px; 
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  color: #fff;
 }
 
 
